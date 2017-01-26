@@ -12,7 +12,7 @@ app.on('window-all-closed', function() {
 
 
 app.on('ready', function() {
-  var win = inbox.open('https://inbox.google.com');
+  var win = inbox.open('https://voice.google.com');
 
   win.on('close', function() {
     fs.writeFileSync(inbox.getBoundsFile(), JSON.stringify({

@@ -1,7 +1,7 @@
 {
-  "name": "inbox-app",
-  "productName": "Inbox",
-  "version": "1.0.0",
+  "name": "google-voice",
+  "productName": "Google Voice",
+  "version": "0.0.1",
   "description": "Electron",
   "main": "app",
   "author": "Felix Gnass <fgnass@gmail.com>",

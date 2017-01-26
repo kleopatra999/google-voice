@@ -9,7 +9,7 @@ module.exports = function(win) {
   var wc = win.webContents;
   wc.on('did-navigate', function(ev, url) {
     var host = URL.parse(url).host;
-    if (host == 'inbox.google.com') {
+    if (host == 'voice.google.com') {
       insertCss(wc);
       this.once('did-finish-load', function() {
         wc.executeJavaScript('module.paths.push("' + dir + '/node_modules");');

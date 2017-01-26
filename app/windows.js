@@ -6,15 +6,14 @@ var inbox = require('./inbox');
 
 var googleHosts = [
   'accounts.google.com',
-  'mail.google.com',
-  'google-mail.com'
+  'voice.google.com',
 ];
 
 module.exports = function(win) {
   var wc = win.webContents;
   wc.on('new-window', function(ev, url, name) {
     var host = URL.parse(url).host;
-    if (host == 'inbox.google.com') {
+    if (host == 'voice.google.com') {
       ev.preventDefault();
       inbox.open(url, name);
     }
